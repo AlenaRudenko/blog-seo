@@ -4,6 +4,11 @@ export interface BlogPost {
   id: number;
   title: string;
   body: string;
+  views: number;
+  reactions: {
+    likes: number;
+    dislikes: number;
+  };
 }
 
 export interface BlogPostsResponse {

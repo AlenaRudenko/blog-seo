@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { BlogPost } from "./posts/page";
 
 export default async function Home() {
   const response = await fetch("https://dummyjson.com/posts");
@@ -16,7 +17,7 @@ export default async function Home() {
           </tr>
         </thead>
         <tbody>
-          {posts.map((post) => {
+          {posts.map((post: BlogPost) => {
             return (
               <tr key={post.id}>
                 <td className="border border-gray-300 p-1 hover:font-bold">

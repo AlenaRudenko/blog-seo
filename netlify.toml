@@ -1,0 +1,7 @@
+[build]
+  command = "npm run build"
+  publish = "out" # Для SSG
+  functions = "out/functions" # Для SSR/API
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"

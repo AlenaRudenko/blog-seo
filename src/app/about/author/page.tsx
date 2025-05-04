@@ -10,8 +10,14 @@ export default function Author() {
   return (
     <div>
       <meta name="author" content="Alena Ignatova" />
-      <h1>Autor</h1>
-      <Image src="/author.jpg" alt="author" width={300} height={300} />
+      <article className="flex gap-5">
+        <Image src="/author.jpg" alt="author" width={300} height={300} />
+        <div>
+          <caption className="text-xl p-2">Author</caption>
+          <h1>Alena Ignatova</h1>
+          <p>NextJS developer</p>
+        </div>
+      </article>
     </div>
   );
 }

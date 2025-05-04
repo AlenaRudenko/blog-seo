@@ -10,14 +10,13 @@ export default function Contacts() {
       <br />
       You may also want to visit us:
       <br />
-      Mozilla Foundation
+      Infomaximum
       <br />
-      1981 Landings Drive
+      Bolshevistskaya street, 30
       <br />
-      Building K<br />
-      Mountain View, CA 94043-0801
+      Saransk
       <br />
-      USA
+      Russia
     </address>
   );
 }

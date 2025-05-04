@@ -49,7 +49,11 @@ export default async function BlogPostPage({
   }
 
   return (
-    <article className="max-w-prose m-auto space-y-5">
+    <article
+      className="max-w-prose m-auto space-y-5"
+      itemScope
+      itemType="http://schema.org/Article"
+    >
       <h1 className="text-3xl text-center font-bold">{title}</h1>
       <p className="text-lg">{body}</p>
     </article>
